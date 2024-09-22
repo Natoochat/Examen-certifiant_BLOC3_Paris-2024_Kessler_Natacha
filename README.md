@@ -1,0 +1,2 @@
+# Examen-certifiant_BLOC3_Paris-2024_Kessler_Natacha
+Examen certifiant_BLOC3_Développement d'une solution digitale avec Python_Kessler_Natacha
