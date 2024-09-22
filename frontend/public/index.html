@@ -40,6 +40,16 @@
           <p>Vos transactions sont sécurisées.</p>
         </div>
       </section>
+      <section class="events">
+        <h2>Événements à ne pas manquer</h2>
+        {% for event in events %}
+        <div class="event">
+          <h3>{{ event.nom }}</h3>
+          <p>{{ event.date }}</p>
+          <a href="#" class="btn">Voir les billets</a>
+        </div>
+        {% endfor %}
+      </section>
     </main>
 
     <footer>
