@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeux Olympiques Paris 2024 - Billetterie non-Officielle</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+    <title>Jeux Olympiques - Billetterie non-Officielle</title>
+    <link rel="stylesheet" href="../../public/css/reset.css" />
+    <link rel="stylesheet" href="../../public/css/billetterie.css" />
+</head>
+<body>
+    <h1>Jeux Olympiques de Paris 2024</h1>
+
+    <div id="evenements">
+        <h2>Événements à venir</h2>
+        <ul>
+            </ul>
+    </div>
+
+    <div id="detail_evenement" class="event">
+        <h2>Détails de l'événement</h2>
+        <p>Nom : <span id="nom_evenement"></span></p>
+        <p>Date : <span id="date_evenement"></span></p>
+        <p>Heure : <span id="heure_evenement"></span></p>
+        <p>Lieu : <span id="lieu_evenement"></span></p>
+        <p>Catégorie : <span id="categorie_evenement"></span></p>
+        <p>Description : <span id="description_evenement"></span></p>
+        <p>Offres : 
+            <ul id="offres_evenement">
+            </ul>
+        </p>
+    </div>
+    <footer>
+    <button id="ajouterAuPanier" class="btn">Ajouter au panier</button>
+    <button id="panier" class="btn"><a href="panier.html">Voir le Panier</a></button>
+    </footer>
+
+    <script src="../services/billetterie.js"></script>
+</body>
+</html>

@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeux Olympiques Paris 2024 - Billetterie non-Officielle</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../public/css/reset.css" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
   </head>
   <body class="index_body">
     <header class="index_header">
+      {% if is_logged_in %}
+      Vous êtes connecté !
+  {% else %}
+      Vous n'êtes pas connecté.
+  {% endif %}
       <nav class="navbar">
         <ul class="nav_list">
           <li class="nav_img">
@@ -17,9 +22,7 @@
               alt="Mascotte des JO sur la tour eiffel"
             />
           </li>
-          <li class="nav_item"><a href="../src/pages/form.html">Connexion</a></li>
-          <li class="nav_item"><a href="../src/pages/calendrier.html">Calendrier</a></li>
-          <li class="nav_item"><a href="../src/pages/disciplines.html">Disciplines</a></li>
+          <li class="nav_item"><a href="../src/pages/login.html">Connexion</a></li>
           <li class="nav_item"><a href="../src/pages/billetterie.html">Billetterie</a></li>
         </ul>
       </nav>
@@ -31,7 +34,6 @@
           Réservez dès maintenant vos billets pour les Jeux Olympiques de Paris
           2024.
         </p>
-        <button class="btn">Acheter mes billets</button>
       </section>
     </main>
     <div class="carousel">
@@ -53,6 +55,7 @@
       </ul>
     </div>
     <script src="../src/services/script.js"></script>
+    <script src="../src/services/login.js"></script>
     <footer>
       <p>&copy; 2024 Jeux Olympiques de Paris. Tous droits réservés.</p>
     </footer>

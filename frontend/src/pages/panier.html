@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Votre panier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Votre panier</h1>
+    <table id="tablePanier">
+      <thead>
+        <tr>
+          <th>Événement</th>
+          <th>Offre</th>
+          <th>Quantité</th>
+          <th>Prix unitaire</th>
+          <th>Prix total</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p>Total : <span id="totalPanier"></span> €</p>
+    <button id="viderPanier">Vider le panier</button>
+    <button id="validerCommande">Valider la commande</button>
+    <script src="../services/panier.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulation de paiement</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Paiement par Carte</h1>
+    <form action="/payer" method="post">
+      <label for="numero">Numéro de carte:</label>
+      <input type="text" id="numero" name="numero" required /><br />
+      <label for="expiration">Date d'expiration:</label>
+      <input type="text" id="expiration" name="expiration" required /><br />
+      <label for="cvc">CVC:</label>
+      <input type="text" id="cvc" name="cvc" required /><br />
+      <button type="submit">Payer</button>
+    </form>
+  </body>
+</html>
