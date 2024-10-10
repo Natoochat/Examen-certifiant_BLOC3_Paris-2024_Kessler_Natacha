@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeux Olympiques Paris 2024 - Billetterie non-Officielle</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="index_body">
+    <header class="index_header">
+      <nav class="navbar">
+        <ul class="nav_list">
+          <li class="nav_img">
+            <img
+              src="images/mascotte-jo.png"
+              alt="Mascotte des JO sur la tour eiffel"
+            />
+          </li>
+          <li class="nav_item"><a href="../src/pages/form.html">Connexion</a></li>
+          <li class="nav_item"><a href="../src/pages/calendrier.html">Calendrier</a></li>
+          <li class="nav_item"><a href="../src/pages/disciplines.html">Disciplines</a></li>
+          <li class="nav_item"><a href="../src/pages/billetterie.html">Billetterie</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Ouvrez grand les Jeux !</h1>
+        <p>
+          Réservez dès maintenant vos billets pour les Jeux Olympiques de Paris
+          2024.
+        </p>
+        <button class="btn">Acheter mes billets</button>
+      </section>
+    </main>
+    <div class="carousel">
+      <button class="caroussel_btn" id="prev">&#10096</button>
+      <button class="caroussel_btn" id="next">&#10097</button>
+      <ul>
+        <li class="slide">
+          <img src="images/léon_marchand.jpg" alt="Photo de Léon Marchand" />
+        </li>
+        <li class="slide active">
+          <img src="images/100m_hommes.jpg" alt="Photo finish du 100m hommes" />
+        </li>
+        <li class="slide">
+          <img src="images/arisa_trew.jpg" alt="Photo de Arisa Trew" />
+        </li>
+        <li class="slide">
+          <img src="images/charles_costes.jpg" alt="Photo du passage de la flemme de Charles Costes"/>
+        </li>
+      </ul>
+    </div>
+    <script src="../src/services/script.js"></script>
+    <footer>
+      <p>&copy; 2024 Jeux Olympiques de Paris. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
